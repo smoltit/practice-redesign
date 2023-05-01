@@ -4,12 +4,17 @@
 }
 @font-face {
     font-family: montserrat;
-    src: url(fonts/Montserrat/static/Montserrat-Medium.ttf);
+    src: url(fonts/Montserrat/static/Montserrat-Light.ttf);
     font-weight: normal;
 }
 @font-face {
     font-family: montserrat;
     src: url(fonts/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: playfairdisplay;
+    src: url(fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf);
     font-weight: bold;
 }
 body {
@@ -18,4 +23,99 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+#fixed-bg {
+    background-image: url(images/big-clay.jpeg);
+    height: 323px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+h1 {
+    font-size: 72px;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 22%;
+    width: 100%;
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+    font-family: playfairdisplay;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem 0;
+}
+h4 {
+    font-size: 17px;
+    font-family: playfairdisplay;
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+.half-page > * {
+    width: 46%;
+    height: 30%;
+    display: inline-block;
+}
+.half-page > :ntn-child(2) {
+    float: right;
+}
+.half-text > * {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+button {
+    border-style: none;
+    background-color: white;
+    border: 1px solid black;
+    font-family: montserrat, sans-serif;
+    width: 60%;
+    height: 2.8rem;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0.5rem 3rem;
+    margin: 1rem 20%;
+    transition: background-color 200ms ease-in;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(17, 50, 48);
+    border-color: rgb(17, 50, 48);
+}
+.half-text {
+    margin: 1rem 2rem;
+    vertical-align: top;
+}
+.services > div {
+    display: inline-block;
+    width: 30%;
+    padding: 0 0.7rem 2rem;
+    text-align: center;
+    vertical-align: top;
+}
+.img-services {
+    width: 100%;
+    padding: 0 0 2rem;
+    position: static;
+}
+.note {
+    font-size: 12px;
+    vertical-align: bottom;
+}
+p {
+    font-family: montserrat, sans-serif;
+    font-weight: normal;
+    text-align: justify;
+}
+.services > div > * {
+    margin: 1rem 0;
 }

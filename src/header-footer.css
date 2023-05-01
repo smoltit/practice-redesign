@@ -1,6 +1,9 @@
 header {
     width: 100%;
     padding: 2rem 0;
+    position: absolute;
+    top: 0;
+    background-color: white;
 }
 header * {
     display: inline-block;
@@ -41,7 +44,7 @@ footer h2 {
 .work-hours, .contacts {
     display: inline-block;
     width: 30%;
-    margin: 2rem 0 4rem;
+    margin: 2rem 0 3rem;
     position: relative;
     right: -1rem;
 }
@@ -55,4 +58,7 @@ footer > p {
 }
 .work-hours > div > p {
     display: inline-block;
+}
+footer a {
+    font-family: montserrat, sans-serif;
 }
