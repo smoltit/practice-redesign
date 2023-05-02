@@ -4,6 +4,7 @@ header {
     position: absolute;
     top: 0;
     background-color: white;
+    z-index: 1;
 }
 header * {
     display: inline-block;
@@ -32,9 +33,9 @@ header nav a {
 
 footer {
     width: 100%;
-    padding: 2rem 0 0.3rem 0;
+    padding: 5rem 0 0.3rem 0;
+    /* background-color: #fff5ec; */
     /* background-color: #ecf3f0; */
-    background-color: #f0f3ec;
 
 }
 .icon {
