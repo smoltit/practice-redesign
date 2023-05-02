@@ -8,6 +8,7 @@ header {
 header * {
     display: inline-block;
 }
+
 header nav {
     width: 65%;
     position: absolute;
@@ -19,7 +20,6 @@ header nav {
 .logo {
     width: 15%;
     text-align: center;
-    font-family: montserrat, sans-serif;
     font-weight: 700;
     font-size: 20px;
     padding: 0 5rem;
@@ -33,6 +33,9 @@ header nav a {
 footer {
     width: 100%;
     padding: 2rem 0 0.3rem 0;
+    /* background-color: #ecf3f0; */
+    background-color: #f0f3ec;
+
 }
 .icon {
     width: 26px;
@@ -43,10 +46,10 @@ footer h2 {
 }
 .work-hours, .contacts {
     display: inline-block;
-    width: 30%;
-    margin: 2rem 0 3rem;
+    width: 48%;
+    margin: 2rem 0;
     position: relative;
-    right: -1rem;
+    /* right: -1rem; */
 }
 footer .contacts {
     position: absolute;
@@ -55,10 +58,11 @@ footer .contacts {
 footer > p {
     width: 100%;
     text-align: center;
+    margin-bottom: 1rem;
 }
 .work-hours > div > p {
     display: inline-block;
 }
-footer a {
-    font-family: montserrat, sans-serif;
+.work-hours {
+    text-align: right;
 }

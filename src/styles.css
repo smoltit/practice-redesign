@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: montserrat, sans-serif;
+    text-decoration: none;
+    color: black;
 }
 @font-face {
     font-family: montserrat;
@@ -17,13 +20,9 @@
     src: url(fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf);
     font-weight: bold;
 }
-body {
-    width: 100%;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
+
+/* FIXED BACKGROUND */
+
 #fixed-bg {
     background-image: url(images/big-clay.jpeg);
     height: 323px;
@@ -31,37 +30,70 @@ a {
     background-attachment: fixed;
     background-position: center 0;
 }
+#center-h1 {
+    width: 100%;
+    position: relative;
+    top: 50%;
+}
 h1 {
     font-size: 72px;
-    font-family: montserrat, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     color: white;
-    position: absolute;
-    top: 22%;
     width: 100%;
+    text-align: center;
+    
+}
+
+
+/* body {
+    width: 100%;
+} */
+
+/* H1-H4 + TEXT STYLES */
+
+h2, h4 {
+    font-family: playfairdisplay;
+    font-weight: bold;
     text-align: center;
 }
 h2 {
     font-size: 32px;
-    font-family: playfairdisplay;
-    font-weight: bold;
-    text-align: center;
-    padding: 2rem 0;
 }
 h4 {
     font-size: 17px;
-    font-family: playfairdisplay;
-    font-weight: bold;
-    text-align: center;
 }
+
+.services h3 {
+    font-weight: normal;
+    font-size: 30px;
+}
+.services a {
+    font-weight: bold;
+}
+p {
+    font-weight: normal;
+    text-align: justify;
+}
+.note {
+    font-size: 12px;
+}
+
+
 
 main {
     width: 70%;
     position: relative;
     left: 15%;
+    font-size: 15px;
+}
+main > div {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .half-page > * {
-    width: 46%;
+    width: 48%;
     height: 30%;
     display: inline-block;
 }
@@ -69,53 +101,41 @@ main {
     float: right;
 }
 .half-text > * {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
 }
+
 button {
     border-style: none;
     background-color: white;
     border: 1px solid black;
-    font-family: montserrat, sans-serif;
     width: 60%;
     height: 2.8rem;
     font-size: 14px;
     font-weight: 400;
-    padding: 0.5rem 3rem;
-    margin: 1rem 20%;
-    transition: background-color 200ms ease-in;
+    margin: 1rem auto;
+    transition: background-color 400ms ease;
 }
-
 button:hover {
     color: white;
     background-color: rgb(17, 50, 48);
     border-color: rgb(17, 50, 48);
 }
+
 .half-text {
-    margin: 1rem 2rem;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
 .services > div {
-    display: inline-block;
     width: 30%;
-    padding: 0 0.7rem 2rem;
     text-align: center;
-    vertical-align: top;
 }
 .img-services {
     width: 100%;
-    padding: 0 0 2rem;
-    position: static;
 }
-.note {
-    font-size: 12px;
-    vertical-align: bottom;
-}
-p {
-    font-family: montserrat, sans-serif;
-    font-weight: normal;
-    text-align: justify;
-}
+
+
 .services > div > * {
     margin: 1rem 0;
 }
