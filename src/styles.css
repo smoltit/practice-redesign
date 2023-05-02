@@ -186,3 +186,7 @@ h1 {
 ol {
     padding-left: 2rem;
 }
+main.prices > div {
+    text-align: center;
+    margin: 0.5rem 0 1rem;
+}
