@@ -221,3 +221,28 @@ div.prices button {
 div.prices div {
     margin: 1rem;
 }
+/* .workshop-price > * {
+    display: inline;
+    gap: 1rem;
+} */
+.workshop {
+    width: 100%;
+}
+.w-name > * {
+    text-align: left;
+    font-size: 24px;
+}
+.w-name {
+    width: 65%;
+}
+.w-price {
+    width: 30%;
+}
+.w-price > * {
+    width: fit-content;
+    font-size: 24px;
+}
+.workshop > * {
+    display: inline-block;
+    vertical-align: top;
+}
