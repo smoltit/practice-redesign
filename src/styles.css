@@ -227,10 +227,49 @@ ol, ul {
 .whyus h2 {
     margin: 2rem;
 }
-
+.w-name > * {
+    text-align: left;
+}
 .prices div {
     margin: 1rem;
 }
-.w-name > * {
-    text-align: left;
+
+/* .discount > * {
+    width: 40%;
+}
+.discount {
+    justify-content: space-evenly;
+}
+.percentage {
+    border: 1px solid black;
+    width: 20%;
+    padding: 2rem;
+} */
+
+.discount img{
+    width: 80%;
+}
+.discount > * {
+    flex-direction: column;
+    width: 50%;
+}
+.percentage {
+    width: 50%;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    bottom: 3rem;
+    transition: ease 500ms;
+}
+.percentage:hover {
+    bottom: 6rem;
+}
+.discount p {
+    display: inline-block;
+    width: 80%;
+    height: 3rem;
+}
+.n1 {
+    margin: -4rem 0 0 5%;
 }
