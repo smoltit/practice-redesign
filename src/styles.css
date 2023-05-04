@@ -24,15 +24,11 @@
 
 /* FIXED BACKGROUND */
 
-#fixed-bg {
+.fixed {
     background-image: url(images/big-pottery-copy.jpeg);
-    /* background-image: url(images/big-clay.jpeg); */
-    height: 323px;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
 }
-#center-h1 {
+.center-h1 {
     width: 100%;
     position: relative;
     top: 50%;
@@ -43,9 +39,16 @@ h1 {
     color: white;
     width: 100%;
     text-align: center;
-    
 }
-
+.clay {
+    background-image: url(images/file.gif);
+    background-size: cover;
+}
+.bg {
+    height: 323px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /* H1-H4 STYLES */
 
 h2, h4 {
@@ -56,12 +59,20 @@ h2, h4 {
 h2 {
     font-size: 32px;
 }
-h4 {
+h3 {
     font-size: 17px;
+}
+.rules h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -0.7rem ;
 }
 .services h3 {
     font-weight: normal;
     font-size: 30px;
+}
+.cowork h3 {
+    color: #F5B7CD;
 }
 
 /* MAIN AREA */
@@ -70,11 +81,11 @@ main {
     width: 70%;
     position: relative;
     top: 2rem;
-    left: 13%;
+    margin: 0 auto;
     padding: 1.5rem;
     background-color: rgb(250, 250, 250);
 }
-main.main > div, main.coworking > .half-page {
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,9 +102,7 @@ main.main > div, main.coworking > .half-page {
 }
 
 .half-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    text-align: center;
 }
 
 
@@ -121,19 +130,40 @@ main.main > div, main.coworking > .half-page {
     width: 100%;
 }
 
+/* BUTTONS READY */
 
 button {
     border-style: none;
     background-color: white;
     border: 1px solid black;
-    width: 60%;
-    height: 2.8rem;
     font-size: 14px;
     font-weight: 400;
-    margin: 1rem auto;
     transition: background-color 400ms ease;
 }
+.but1 {
+    width: 60%;
+    height: 2.8rem;
+    margin: 1rem auto;
+}
+.list {
+    display: flex;
+    width: 100%;
+}
+.list > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+}
+.but2 > * {
+    width: 90%;
+    height: 45%;
+}
+.prices button {
+    width: 20%;
+}
 button:hover {
+    cursor: pointer;
     color: white;
     background-color: rgb(17, 50, 48);
     border-color: rgb(17, 50, 48);
@@ -144,57 +174,39 @@ button:hover {
 .services a {
     font-weight: bold;
 }
-.main p {
-    font-weight: normal;
-    text-align: justify;
-}
-.note {
-    font-size: 12px;
-}
+
 .current-page {
     color: rgb(42, 43, 193);
 }
-
-
+.description > * {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+.note > * {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+}
 
 /* R U L E S  */
 
-
-
-.clay-bg {
-    background-image: url(images/file.gif);
-    height: 323px;
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-h1 {
-    width: 100%;
-    position: relative;
-    top: 50%;
-}
 .rules > div {
     margin: 2rem 0;
 }
 .rules * {
     margin: 1rem 0;
 }
-.rules h3 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: -0.7rem ;
-}
-ol {
+
+ol, ul {
     padding-left: 2rem;
+    text-align: justify;
 }
-main.prices > div, div.prices {
+/* yes */
+
+.prices {
     text-align: center;
     margin: 0.5rem 0 1rem;
 }
-.cowork h3 {
-    font-size: 18px;
-    color: #F5B7CD;
-    margin-top: 2rem;
-}
+
 .whyus {
     font-size: 0;
 }
@@ -215,34 +227,10 @@ main.prices > div, div.prices {
 .whyus h2 {
     margin: 2rem;
 }
-div.prices button {
-    width: 20%;
-}
-div.prices div {
+
+.prices div {
     margin: 1rem;
-}
-/* .workshop-price > * {
-    display: inline;
-    gap: 1rem;
-} */
-.workshop {
-    width: 100%;
 }
 .w-name > * {
     text-align: left;
-    font-size: 24px;
-}
-.w-name {
-    width: 65%;
-}
-.w-price {
-    width: 30%;
-}
-.w-price > * {
-    width: fit-content;
-    font-size: 24px;
-}
-.workshop > * {
-    display: inline-block;
-    vertical-align: top;
 }
