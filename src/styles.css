@@ -155,6 +155,10 @@ button {
     justify-content: space-between;
     width: 48%;
 }
+.list ul {
+    text-align: left;
+    margin-left: 1rem;
+}
 .but2 > * {
     width: 90%;
     height: 45%;
@@ -329,13 +333,20 @@ hr {
     clear: both;
     display: table;
 }
+.work {
+    flex-direction: row-reverse;
+}
 
 @media screen and (max-width: 767px) {
+
     h1 {
         font-size: 54px;
     }
     .center-h1 {
         top: 62%;
+    }
+    .work {
+        flex-direction: row;
     }
     .flex {
         display: inline;
