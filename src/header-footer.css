@@ -5,28 +5,39 @@ header {
     top: 0;
     background-color: white;
     z-index: 1;
+    max-height: 72px;
 }
 header * {
     display: inline-block;
 }
 
 header nav {
-    width: 65%;
-    position: absolute;
-    right: 1rem;
-    text-align: center;
+    margin: 0 3rem;
     box-sizing: border-box;
     line-height: 24px;
+    width: 77%;
+    text-align: right;
+}
+.ico {
+    height: 3rem;
+    vertical-align: middle;
+    position: absolute;
+    right: 2rem;
+    top: 2.8rem;
+}
+.ico1 {
+    height: 100%;
 }
 .logo {
-    width: 15%;
+    max-width: 5vw;
+    vertical-align: middle;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    padding: 0 5rem;
+    padding-left: 3vw;
 }
 header nav a {
-    padding: 0rem 1.5rem;
+    padding: 0 1.5vw;
     font-size: 14px;
     font-family: "open sans", sans-serif;
 }
@@ -66,4 +77,68 @@ footer > p {
 }
 .work-hours {
     text-align: right;
+}
+.side-menu {
+    display: none;
+}
+.hamb-line {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+
+    header {
+        position: fixed;
+    }
+    .logo {
+        width: 20%;
+        padding: 0 2rem;
+    }
+    .hamb-line {
+        display: inline-block;
+        height: 2.5rem;
+        width: 2.5rem;
+        position: fixed;
+        top: 1rem;
+        right: 2vw;
+        z-index: 2;
+    }
+    .ico {
+        position: fixed;
+        top: 4.5rem;
+        right: 1.8vw;
+    }
+
+    .ico3 {
+        position: relative;
+        top: 0.5rem;
+        left: 0.2rem;
+    }
+        
+    
+    .menu {
+        background-color: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu a {
+        width: 80%;
+        font-size: large;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    .menu li {
+        display: none;
+        transition: display 1s esae;
+    }
+    .side-menu:checked + .menu li  {
+        display: block;
+    }
+    .menu li:hover {
+        background-color: rgb(243, 243, 243);
+    }
+
 }
