@@ -31,7 +31,7 @@ header nav {
 .logo {
     max-width: 5vw;
     vertical-align: middle;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     font-size: 20px;
     padding-left: 3vw;
@@ -86,6 +86,13 @@ footer > p {
 }
 @media screen and (max-width: 767px) {
 
+    .work-hours {
+        width: 40%;
+    }
+    .contacts {
+        width: 40%;
+
+    }
     header {
         position: fixed;
     }
@@ -125,14 +132,14 @@ footer > p {
     }
 
     .menu a {
-        width: 80%;
+        width: 100%;
         font-size: large;
-        padding: 1.5rem;
+        padding: 1.5rem 0;
         text-align: center;
     }
     .menu li {
         display: none;
-        transition: display 1s esae;
+        transition: display 300ms linear;
     }
     .side-menu:checked + .menu li  {
         display: block;

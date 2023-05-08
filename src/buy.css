@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+header {
+    padding: 2rem;
+}
+
+#arrow {
+    position: absolute;
+    right: 2rem;
+}
+.choose {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(109, 139, 128);
+}
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-weight: normal;
+    font-size: 20px;
+}
+.choose * {
+    color: white;
+}
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.services img {
+    width: 7rem;
+}
+.pot > * {
+    padding: 2rem;
+}
+.buy h3 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem 0 0 0.5rem;
+}
+.services a {
+    background-color: rgb(250, 250, 250);
+    margin: 0.5rem;
+}
+@media screen and (max-width: 450px) {
+
+    .buy h3 {
+        display: block;
+    }
+
+}
